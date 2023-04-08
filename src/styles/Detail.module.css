@@ -1,0 +1,88 @@
+.detalleBtn{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+   
+}
+
+.detalleBackground{
+    min-height: 100vh;
+    min-height: 100vh;
+    /* background: bisque; */
+    background: url('../assets/fondoDetail.jpg') no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.imgCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75em;
+    width: 350px;
+    height: 640px;
+    background-color: rgba(255, 255, 255, 0.781);
+    margin: 37px auto;
+}
+
+    .imagen{
+        width: 200px;
+        
+    }
+
+
+    .stats{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        margin: 3%;
+    }
+
+
+
+.botones {
+  background-color: #f9f9f9;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(226, 206, 30, 0.418);
+  transition: all 0.2s ease-in-out;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.botones:first-child {
+  margin-right: 10px;
+}
+
+      
+      .botones:hover {
+        background-color: #f1d222;
+        color: #000000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease-in-out;
+      }
+
+      .detailName {
+        text-decoration: none;
+        font-family: 'Luckiest Guy';
+        color: #0f4616;
+        font-size: 24px;
+        margin-top: 30px;
+      }
+      
+
+
+.tipos{
+    font-family: 'Montserrat', sans-serif;
+    color: cornflowerblue;
+    font-weight: bolder;
+}
+span{
+    margin: 2%;
+    color: black; 
+}

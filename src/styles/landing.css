@@ -1,0 +1,59 @@
+.container {
+  
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/city.jpg);
+  background-size: cover; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  width: 500px;
+  height: 300px;
+  background: url("../assets/pokemon.png") no-repeat center center;
+  background-size: contain;
+}
+
+.contenedor {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.74) 0%, rgba(163, 204, 153, 0.466) 100%);
+  padding: 92px;
+  border-radius: 30px;
+  text-align: center;
+  text-shadow: X-offset Y-offset blur color;
+
+}
+h1 {
+  font-size: 40px;  
+}
+
+p {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nube p {
+  font-size: 1.2em;
+}
+
+.btnPrimary {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #3a790f;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 7px;
+}
+
