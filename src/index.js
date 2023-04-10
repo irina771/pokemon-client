@@ -5,6 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux';
 import {store} from './redux/store/index';
+import axios from 'axios';
+
+//para trabajar de forma local descomentamos la siguiente linea
+// axios.defaults.baseURL = 'http://localhost:3001';
+axios.defaults.baseURL = 'https://pokemon-api-production-3da3.up.railway.app/';
 
 ReactDOM.render(
 

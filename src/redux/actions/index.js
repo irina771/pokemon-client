@@ -12,7 +12,7 @@ export const ORDER_BY_TYPE = "ORDER_BY_TYPE" */
 export function getPokemon() {
   return async (dispatch) => {
       try {
-          var pokemon = await axios('http://localhost:3001/pokemons');
+          var pokemon = await axios('/pokemons');
           return dispatch({
               type: "GET_POKEMON",
               payload: pokemon.data
@@ -44,7 +44,7 @@ export function orderByType (payload){
 export function getPokeType (){
   return async(dispatch) => {
     try {
-      let pokeType = await axios('http://localhost:3001/types');
+      let pokeType = await axios('/types');
       return dispatch ({
           type: "GET_TYPES",
           payload: pokeType.data
@@ -58,7 +58,7 @@ export function getPokeType (){
  export function getName(name){
   return async(dispatch) => {
     try {
-      const pokNam = await axios.get("http://localhost:3001/pokemons?name=" + name) 
+      const pokNam = await axios.get("/pokemons?name=" + name) 
        
 
       return dispatch ({
@@ -79,7 +79,7 @@ export function getPokeType (){
 export function getType(name){
   return async(dispatch) => {
     try {
-      const pokNam = await axios.get("http://localhost:3001/pokemons?type=" + name) 
+      const pokNam = await axios.get("/pokemons?type=" + name) 
        
 
       return dispatch ({
@@ -102,7 +102,7 @@ export function getType(name){
 export function getId(id){
  return async function (dispatch){
   try {
-    const idPoke = await axios("http://localhost:3001/pokemon/" + id)
+    const idPoke = await axios("/pokemon/" + id)
     return dispatch({
       type: "GET_ID", 
       payload: idPoke.data
@@ -118,7 +118,7 @@ export function getId(id){
 export function postPoke(payload){
   return async function(dispatch){
     //le paso un payload tambien a la ruta 
-    const post = await axios.post("http://localhost:3001/createPokemons", payload)
+    const post = await axios.post("/createPokemons", payload)
     return dispatch({
       type: "POST_POKEMON",
       payload: post
